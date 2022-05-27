@@ -113,7 +113,59 @@
 }
 
 .header {
-  display: grid;
   grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.logo {
+  grid-column: 1 / 2;
+}
+
+.menu {
+  grid-column: 2 / 3;
+}
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 2 / 4;
+  display: grid;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.nav {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.nav > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.article {
+  grid-column: 2;
+  grid-row: 3 / 4;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  height: 200px;
+}
+
+.footer {
+  grid-column: 1 / 3;
+
 }
 
